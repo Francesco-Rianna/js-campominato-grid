@@ -16,15 +16,24 @@ const buttonPlay = document.querySelector('.btn');
 // prendo elemento del dom in cui devo inserire i quadrati
 const gridContainer = document.querySelector('.ms-grid');
 // inizio un ciclo for per prendermi 100 quadrati
-for (i = 0; i <= 100; i++) {
-    // const newSquare = generateSquare(i)
-    // gridContainer.append(newSquare)
+for (i = 1; i <= 100; i++) {
+    const newSquare = generateSquare(i)
+    gridContainer.append(newSquare)
 }
 
 
 function generateSquare(number) {
+    // creo l'elemento del dom
     const newSquare = document.createElement('div')
-    newSquare.classList.add('.ms-square')
+    // gli do una classe 
+    newSquare.classList.add('ms-square')
+    // inserisco il numero all'interno del div
     newSquare.innerHTML = `<span>${number} </span>`
 
+
+    return newSquare
+
+
+
 }
+
