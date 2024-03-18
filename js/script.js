@@ -35,10 +35,16 @@ function generateSquare(number) {
     // inserisco il numero all'interno del div
     newSquare.innerHTML = `<span>${number} </span>`
 
+    newSquare.addEventListener('click', function () {
+
+        newSquare.classList.toggle('ms-bg-square')
+
+
+    })
+
 
     return newSquare
 
-    // do una funzione al click 
 
 
 
