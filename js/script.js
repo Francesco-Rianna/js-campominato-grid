@@ -38,6 +38,7 @@ function generateSquare(number) {
     newSquare.addEventListener('click', function () {
 
         newSquare.classList.toggle('ms-bg-square')
+        console.log(number)
 
 
     })
